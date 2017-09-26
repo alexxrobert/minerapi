@@ -110,7 +110,7 @@ class Cgminer(Miner):
         return json.dumps(payload)
 
     def _parse(self, data):
-        return json.loads(data)
+        return json.loads(data.replace('}{','},{'))
 
     def failover_only(self, switch):
         return self.command('failover-only', 'true' if switch else 'false')
