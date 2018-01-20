@@ -13,6 +13,8 @@ Installation
 .. code-block::
 
     $ pip install minerapi
+    
+    $ pip install -e .
 
 
 QuickStart
